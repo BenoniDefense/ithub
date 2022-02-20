@@ -1,0 +1,53 @@
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 10px;
+}
+
+body {
+   margin: 0;
+   font-family: $font;
+   background: #131313;
+   color: $white;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+   margin: 0;
+}
+
+ul {
+   padding: 0;
+   list-style-type: none;
+}
+
+a {
+   display: inline-block;
+   text-decoration: none;
+   color: inherit;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+section {
+   padding-block: 12rem;
+}
+
+.container {
+   max-width: 1200px;
+   padding-inline: 15px;
+   margin-inline: auto;
+}
+
+span.orange {
+   color: $orange;
+}
+
+span.purple {
+   color: $purple;
+}

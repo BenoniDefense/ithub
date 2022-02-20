@@ -1,0 +1,135 @@
+.full-services {
+
+   &__titles {
+      margin-bottom: 10rem;
+   }
+
+   &__subtitle {
+      font-size: 3rem;
+      padding-left: 2px;
+      text-transform: uppercase;
+   }
+
+   &__title {
+      font-size: 7rem;
+      line-height: .8;
+      text-transform: uppercase;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem 0;
+
+      margin-bottom: 10rem;
+
+      &-item {
+         font-size: 2rem;
+         letter-spacing: 2px;
+         font-weight: 500;
+         text-transform: uppercase;
+
+         background: rgba(224, 111, 36, 0.2);
+         border: 1px solid rgba(224, 111, 36, 0.3);
+         box-shadow: 0 0 10px rgba(224, 111, 36, 0.3);
+
+         &:nth-child(2) {
+            margin-bottom: 3.5rem;
+         }
+
+         &:hover .full-services__list-link {
+            background: rgba(224, 111, 36, 0.1);
+         }
+
+         &.active {
+            transition: background .2s linear;
+            background: rgba(224, 111, 36, 0.1);
+            box-shadow: 0 0 15px rgba(224, 111, 36, 0.2);
+
+            .full-services__list-link {
+               transition: background .1s linear;
+               background: rgba(224, 111, 36, 0.1);
+
+               &:hover {
+                  background: rgba(224, 111, 36, 0.2);
+               }
+            }
+         }
+      }
+
+      &-link {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         width: 100%;
+         padding: 15px;
+
+         position: relative;
+
+         transition: background .2s linear;
+      }
+
+      &-arrow {
+         width: 15px;
+         min-width: max-content;
+         height: 15px;
+         padding-left: 5px;
+
+         transition: transform .1s linear,
+                     fill .1s linear;
+
+         &.active {
+            transform: rotateZ(180deg);
+         }
+      }
+   }
+
+   &__droplist {
+      max-width: 1200px;
+      padding: 15px 30px 10px;
+      font-size: 2rem;
+
+      display: none;
+      flex-direction: column;
+      gap: 2rem 0;
+      
+      &.active {
+         display: flex;
+      }
+
+      &-item {
+         position: relative;
+         font-weight: 300;
+
+         &::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $orange;
+
+            top: 50%;
+            transform: translateY(-50%);
+            left: -20px;
+
+            box-shadow: 0 0 10px .5px $orange;
+         }
+
+         & span {
+            font-weight: 600;
+         }
+      }
+   }
+
+   &__note {
+      text-align: center;
+      font-size: 1.8rem;
+      border-radius: 3px;
+
+      & span {
+         color: red;
+      }
+   }
+}

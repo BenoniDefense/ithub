@@ -1,0 +1,44 @@
+.footer {
+   padding: 4rem 0 6rem;
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 20rem;
+   }
+
+   &__logo {
+      width: 15rem;
+      margin-bottom: 10rem;
+   }
+
+   &__title {
+      font-size: 3.8rem;
+   }
+
+   &__right {
+      display: flex;
+      gap: 0 10rem;
+   }
+
+   &__list-title {
+      font-size: 3.8rem;
+      margin-bottom: 3.8rem;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem 0;
+   }
+
+   &__list-item {
+      font-size: 2rem;
+   }
+
+   &__bottom-text {
+      font-size: 3.5rem;
+   }
+}

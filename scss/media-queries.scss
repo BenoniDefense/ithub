@@ -1,0 +1,156 @@
+@media (min-width: 1440px) {
+   :root {
+      font-size: 7px;
+   }
+
+   
+}
+
+@media (max-width: 1440px) {
+   :root {
+      font-size: 8px;
+   }
+}
+
+@media (max-width: 1024px) {
+   :root {
+      font-size: 6px;
+   }
+
+   .header {
+      padding-top: 3rem;
+   }
+
+   .services__card-img {
+      width: 80px;
+   }
+
+   .reviews__text {
+      padding: 0 30px;
+   }
+}
+
+@media (max-width: 768px) {
+   :root {
+      font-size: 5px;
+   }
+
+   .header__logo {
+      flex-basis: calc(50% + 40px);
+
+      img {
+         max-width: 80px;
+      }
+   }
+
+   .panel__list-link {
+      font-size: 12px;
+   }
+
+   .menu {
+      padding-inline: 10vw;
+
+      &__close {
+         left: 10vw !important;
+      }
+   }
+
+   .wrapper {
+      background-size: cover;
+   }
+   .services {
+      background-size: cover;
+
+      &__card {
+         flex-basis: 187px;
+         
+         &-img {
+            width: 60px;
+         }
+
+         &:hover .services__card-img, &:hover .services__card-text {
+            transform: translateZ(0);
+         }
+      }
+   }
+
+   .full-services__list-item {
+      letter-spacing: 1px;
+   }
+
+   .contacts__map .map {
+      height: 300px;
+   }
+}
+
+@media (max-width: 630px) {
+   :root {
+      font-size: 6px;
+   }
+
+   .intro {
+      &__inner {
+         justify-content: start;
+      }
+
+      &__img {
+         display: none;
+      }
+   }
+
+   .panel__list {
+      gap: 0;
+      
+      &-link {
+         padding: 15px 12px;
+      }
+   }
+
+   .reviews__name {
+      justify-content: center;
+      padding-right: 0;
+   }
+
+   .footer__inner {
+      flex-wrap: wrap;
+      gap: 15rem 0;
+      margin-bottom: 7rem;
+   }
+}
+
+@media (max-width: 425px) {
+   :root {
+      font-size: 5.5px;
+   }
+
+   .menu__close {
+      top: 50px !important;
+      left: 15px !important;
+   }
+
+   .header__logo {
+      flex-basis: auto;
+   }
+
+   .services__card {
+      flex-basis: 250px;
+   }
+
+   .panel {
+      bottom: 10px;
+   }
+
+   .full-services__list-link {
+      padding: 12px 7px;
+   }
+}
+
+@media (max-width: 375px) {
+   :root {
+      font-size: 5px;
+   }
+
+   .footer__right {
+      gap: 0 7rem;
+   }
+}
