@@ -108,13 +108,12 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background: $orange;
+            background: $purple;
 
             top: 50%;
-            transform: translateY(-50%);
             left: -20px;
 
-            box-shadow: 0 0 10px .5px $orange;
+            animation: 2s ease-in-out infinite alternate pulse;
          }
 
          & span {
